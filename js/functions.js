@@ -66,25 +66,25 @@ function possibleMobile() {
     return window.innerWidth <= 800;
 }
 
-$('#experience #projects-all').on('click', function(e) {
-    $('#experience .projects-picker span').removeClass('active');
+$('#Projects #projects-all').on('click', function(e) {
+    $('#Projects .projects-picker span').removeClass('active');
     $(e.currentTarget).addClass('active');
 
-    $('#experience .project').removeClass('hidden');
+    $('#Projects .project').removeClass('hidden');
 })
-$('#experience #projects-fullstack').on('click', function(e) {
-    $('#experience .projects-picker span').removeClass('active');
+$('#Projects #projects-fullstack').on('click', function(e) {
+    $('#Projects .projects-picker span').removeClass('active');
     $(e.currentTarget).addClass('active');
 
-    $('#experience .project').addClass('hidden');
-    $('#experience #p4').removeClass('hidden');
-    $('#experience #p3').removeClass('hidden');
+    $('#Projects .project').addClass('hidden');
+    $('#Projects #p4').removeClass('hidden');
+    $('#Projects #p3').removeClass('hidden');
 })
-$('#experience #projects-frontend').on('click', function(e) {
-    $('#experience .projects-picker span').removeClass('active');
+$('#Projects #projects-frontend').on('click', function(e) {
+    $('#Projects .projects-picker span').removeClass('active');
     $(e.currentTarget).addClass('active');
 
-    $('#experience .project').addClass('hidden');
-    $('#experience #p1').removeClass('hidden');
-    $('#experience #p2').removeClass('hidden');
+    $('#Projects .project').addClass('hidden');
+    $('#Projects #p1').removeClass('hidden');
+    $('#Projects #p2').removeClass('hidden');
 })
